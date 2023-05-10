@@ -9,13 +9,14 @@ const navMenu = document.getElementById('nav-menu'),
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
-        console.log("show menu")
+        console.log("show's menu")
     })
 }
 
 // menu hidden
-if (navToggle) {
-    navToggle.addEventListener('click', () => {
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
+        console.log("Close's  menu")
     })
 }
