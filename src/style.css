@@ -413,14 +413,6 @@ section {
     color: var(--text-color-light);
 }
 
-.skills__icon{
-    margin-right: var(--mb-0-75);
-}
-
-.skills__title{
-    font-size: var(--h3-font-size);
-}
-
 .skills__subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
@@ -431,7 +423,7 @@ section {
     transition: .4s;
 }
 
-.skills__title{
+.skills__titles{
     display: flex;
     justify-content: space-betweeen;
     margin-bottom: var(--mb-0-5);
