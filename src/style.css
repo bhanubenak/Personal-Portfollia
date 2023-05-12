@@ -423,6 +423,7 @@ section {
     transition: .4s;
 }
 
+/* for particular skill */
 .skills__titles{
     display: flex;
     justify-content: space-betweeen;
