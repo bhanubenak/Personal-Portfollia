@@ -49,13 +49,26 @@ tabs.forEach(tab => {
         tabContents.forEach(tabContent => {
             tabContent.classList.remove('qualification__active')
         })
-
         target.classList.add('qualification__active')
 
-        tab.forEach(tab => {
+        tabs.forEach(tab => {
             tab.classList.remove('qualification__active')
         })
 
         tab.classList.add('qualification__active')
     })
 })
+
+// swipper slide
+let swiper = new Swiper('.portfollia__container', {
+    cssMode: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+});
