@@ -8,6 +8,7 @@
     <title>BhanuBenak - Portfollia</title>
 
     <!-- stylesheet -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="./style.css">
     <!-- unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -343,14 +344,14 @@
     </section>
 
     <!-- Qualification -->
-    <section class="qualification section">
+    <section class="qualification section" id="#work">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My Personal Journey</span>
 
         <div class="qualification__container container">
-            <div class="qualification__tabs">
-                <div class="qualification__button button--flex">
-                    <i class="uil uil-briefcase-alt qualification__icon qualification__active" data-target="#work"></i>
+            <div class="qualification__tabs" id="education">
+                <div class="qualification__button button--flex qualification__active" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
                     Work
                 </div>
                 <div class="qualification__button button--flex" data-target="#education">
@@ -360,7 +361,7 @@
             </div>
             <div class="qualification__sections">
                 <!-- qualification content1 -->
-                <div class="qualification__content qualification__active" data-content id=" work">
+                <div class="qualification__content qualification__active" data-content id="#work">
                     <div class="qualification__data">
 
 
@@ -384,7 +385,7 @@
                     </div>
 
                     <!-- qualification 1 -->
-                    <div class="qualification__content data-content id=" work>
+                    <div class="qualification__content" data-content id="#education">
                         <div class="qualification__data">
                             <div></div>
                             <div>
@@ -412,9 +413,61 @@
         </div>
     </section>
 
+    <!-- POrtfollio -->
+    <section class="portfollia section" id="portfollia">
+        <h2 class="section__title">Portfollia</h2>
+        <span class="section__subtitle">Most Recent Work</span>
+
+        <div class="portfollia__container container swiper-container">
+            <div class="swiper-wrapper">
+                <!-- portfollia-1 -->
+                <div class="portfollia__content grid swiper-slide">
+                    <img src="assets/images/responsive-website.png" alt="responsive-website" class="portfollia__img">
+
+                    <div class="portfollio__data">
+                        <h3 class="portfollio__title">Responsive Web Design</h3>
+                        <p class="portfollio__description">
+                            Implemented and deployed a responsive web page using CSS media queries and flexbox layout
+                            for a Figma mockup by applying a mobile first approach.
+                        </p>
+                        <a href="" class="button button__flex button--small portfollio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- portfollia-1 -->
+                <div class="portfollia__content grid swiper-slide">
+                    <img src="assets/images/calculator-website.png" alt="calculator-website" class="portfollia__img">
+
+                    <div class="portfollio__data">
+                        <h3 class="portfollio__title">Scientific Calculator</h3>
+                        <p class="portfollio__description">
+                            Developed a calculator to replicate the user interface and functionality of Google's
+                            Scientific Calculator using Bootstrap's framework and JavaScript programming.
+                        </p>
+                        <a href="" class="button button__flex button--small portfollio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- add arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- add pagination -->
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
 
     <!-- main.js -->
 </body>
+<script src="./swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
 
 </html>
