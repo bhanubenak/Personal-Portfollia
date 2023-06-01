@@ -589,3 +589,33 @@ section {
 .qualification__button .qualification__active {
     color: var(--first-color);
 }
+
+
+/* portfollio */
+
+.portfollio__container{
+    overflow: initial;
+}
+
+.portfollio__content{
+    padding: 0 1.5rem;
+}
+
+.portfollio__img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfollio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.portfollio__description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfollio__button:hover .button__icon{
+    transform: translateX(.25rem);
+}
