@@ -385,7 +385,8 @@ section {
 
 /* about section */
 .about__img {
-    width: 200px;
+    width: 250px;
+    height: 300px !important;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -995,7 +996,8 @@ section {
     }
 
     .about__img{
-        width: 350px;
+        width: 250px;
+        height: 300px;
     }
 
     .about__description{
