@@ -771,6 +771,7 @@ section {
 .footer__bg {
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
+    margin-top: 30px;
 }
 
 .footer__title {
