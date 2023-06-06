@@ -19,7 +19,17 @@ if (navClose) {
     })
 }
 
+// remove menu mobile
+const navLink = document.querySelectorAll('.nav__link')
 
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show-menu')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// skills
 const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -63,7 +73,7 @@ skillsHeader.forEach((el) => {
 // swipper slide
 let swiper = new Swiper('.portfolio__container', {
     cssMode: true,
-    // loop: true,
+    loop: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
